@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function countVowelAndConsonant(str) {
+        this.vowel = 0;
+        this.consonant = 0;
+        this.space = 0;
+        for (let i=0;i<str.length;i++) {
+            if (str.charAt(i)==="u"||str.charAt(i)==="e"||str.charAt(i)==="o"||str.charAt(i)==="a"||str.charAt(i)==="i") {
+                this.vowel++;
+            } else if(str.charAt(i)===" ") {
+                this.space++;
+            } else {
+                this.consonant++;
+            }
+        }
+    }
+    var str1="This is a string";
+    var str2 = "This is another string";
+    var test = new countVowelAndConsonant(str1);
+    var test2 = new countVowelAndConsonant(str2);
+    console.log(test.vowel + " - " + test.consonant);
+    console.log(test2.vowel + " - " + test2.consonant);
+</script>
+</body>
+</html>

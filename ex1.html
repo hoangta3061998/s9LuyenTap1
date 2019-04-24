@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isValidDate(str) {
+        regexp = /^(0?[1-9]|[12][0-9]|3[01])[\/](0?[1-9]|1[0-2])[\/]\d{4}/;
+        if(regexp.test(str)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    var str1 = "01/02/2000";
+    var str2 = "11/12/1901";
+    var str3 = "30/12/111";
+    console.log(isValidDate(str1));
+    console.log(isValidDate(str2));
+    console.log(isValidDate(str3));
+
+</script>
+</body>
+</html>

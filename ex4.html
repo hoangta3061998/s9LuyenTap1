@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+function checkPrivateCode(str) {
+    regexp = /\d{6}/;
+    if (regexp.test(str)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+var str = "123456";
+console.log(checkPrivateCode(str));
+
+
+</script>
+</body>
+</html>
